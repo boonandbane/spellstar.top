@@ -10,10 +10,8 @@
 
   :root {
     --blue: #1a6fd8;
-    --blue-dark: #1458ad;
     --blue-light: #dff1ff;
     --yellow: #FFD93D;
-    --yellow-dark: #f0c000;
     --text: #1a2340;
     --muted: #5a6a8a;
     --white: #ffffff;
@@ -29,7 +27,6 @@
     overflow-x: hidden;
   }
 
-  /* Stars background */
   body::before {
     content: '';
     position: fixed;
@@ -51,7 +48,6 @@
     z-index: 1;
   }
 
-  /* Header */
   header {
     padding: 2rem 0 0;
     text-align: center;
@@ -76,10 +72,7 @@
     box-shadow: 0 4px 16px rgba(26,111,216,0.3);
   }
 
-  .star-icon svg {
-    width: 30px;
-    height: 30px;
-  }
+  .star-icon svg { width: 30px; height: 30px; }
 
   .app-name {
     font-family: 'Fredoka', sans-serif;
@@ -89,7 +82,6 @@
     letter-spacing: -0.5px;
   }
 
-  /* Hero */
   .hero {
     text-align: center;
     padding: 2.5rem 0 2rem;
@@ -104,9 +96,7 @@
     margin-bottom: 1rem;
   }
 
-  .hero h1 span {
-    color: var(--blue);
-  }
+  .hero h1 span { color: var(--blue); }
 
   .hero p {
     font-size: 1.1rem;
@@ -125,7 +115,6 @@
     font-weight: 600;
     padding: 0.6rem 1.6rem;
     border-radius: 50px;
-    letter-spacing: 0.3px;
     box-shadow: 0 4px 16px rgba(26,111,216,0.35);
     animation: pulse 2.5s ease-in-out infinite;
   }
@@ -135,112 +124,20 @@
     50% { box-shadow: 0 4px 28px rgba(26,111,216,0.55); }
   }
 
-  /* Phone mockup */
   .phone-wrap {
     display: flex;
     justify-content: center;
     margin: 2rem 0;
   }
 
-  .phone {
-    width: 200px;
-    background: var(--blue);
-    border-radius: 32px;
-    padding: 16px 12px;
-    box-shadow: 0 20px 60px rgba(26,111,216,0.35), 0 8px 20px rgba(0,0,0,0.1);
-    position: relative;
-  }
-
-  .phone::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 5px;
-    background: rgba(255,255,255,0.2);
-    border-radius: 3px;
-  }
-
-  .phone-screen {
-    background: var(--blue-light);
-    border-radius: 22px;
-    padding: 1rem 0.75rem;
-    min-height: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.6rem;
-    overflow: hidden;
-  }
-
-  .phone-header {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--blue);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .word-card {
-    background: var(--white);
-    border-radius: 14px;
-    padding: 0.75rem 1rem;
+  .phone-wrap img {
+    max-width: 260px;
     width: 100%;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(26,111,216,0.12);
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(26,111,216,0.3), 0 8px 20px rgba(0,0,0,0.1);
   }
 
-  .word-label {
-    font-size: 0.65rem;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    margin-bottom: 4px;
-  }
-
-  .word-display {
-    font-family: 'Fredoka', sans-serif;
-    font-size: 1.3rem;
-    color: var(--blue);
-    font-weight: 600;
-    letter-spacing: 4px;
-    min-height: 28px;
-  }
-
-  .phone-keys {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 3px;
-    width: 100%;
-    margin-top: auto;
-  }
-
-  .key {
-    background: var(--white);
-    border-radius: 5px;
-    height: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.6rem;
-    font-weight: 700;
-    color: var(--blue);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  }
-
-  .key.yellow {
-    background: var(--yellow);
-    color: var(--text);
-  }
-
-  /* Features */
-  .features {
-    padding: 1rem 0 3rem;
-  }
+  .features { padding: 1rem 0 3rem; }
 
   .features h2 {
     font-family: 'Fredoka', sans-serif;
@@ -285,13 +182,8 @@
     margin-bottom: 0.3rem;
   }
 
-  .feature-card p {
-    font-size: 0.85rem;
-    color: var(--muted);
-    line-height: 1.5;
-  }
+  .feature-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
 
-  /* Footer */
   footer {
     background: var(--blue);
     color: rgba(255,255,255,0.7);
@@ -302,12 +194,7 @@
     z-index: 1;
   }
 
-  footer a {
-    color: var(--yellow);
-    text-decoration: none;
-    font-weight: 600;
-  }
-
+  footer a { color: var(--yellow); text-decoration: none; font-weight: 600; }
   footer a:hover { text-decoration: underline; }
 
   .footer-links {
@@ -340,26 +227,7 @@
   </section>
 
   <div class="phone-wrap">
-    <div class="phone">
-      <div class="phone-screen">
-        <div class="phone-header">
-          <svg width="14" height="14" viewBox="0 0 30 30" fill="none"><path d="M15 3l2.8 8.6H26l-7.1 5.2 2.7 8.6L15 20.2l-6.6 5.2 2.7-8.6L4 11.6h8.2L15 3z" fill="#FFD93D"/></svg>
-          SpellStar
-        </div>
-        <div class="word-card">
-          <div class="word-label">Spell this word</div>
-          <div class="word-display">_ _ _ _ _</div>
-        </div>
-        <div class="word-card" style="background: #e8f4e8; margin-top: 4px;">
-          <div style="font-family: Fredoka, sans-serif; font-size: 1rem; color: #2d7d2d; font-weight: 600;">✓ Correct!</div>
-        </div>
-        <div class="phone-keys">
-          <div class="key">Q</div><div class="key">W</div><div class="key">E</div><div class="key">R</div><div class="key">T</div><div class="key">Y</div><div class="key">U</div><div class="key">I</div><div class="key">O</div><div class="key">P</div>
-          <div class="key">A</div><div class="key">S</div><div class="key">D</div><div class="key">F</div><div class="key">G</div><div class="key">H</div><div class="key">J</div><div class="key">K</div><div class="key">L</div><div class="key" style="grid-column: span 1;">⌫</div>
-          <div class="key yellow" style="grid-column: span 5;">SPACE</div><div class="key yellow" style="grid-column: span 5;">ENTER ↵</div>
-        </div>
-      </div>
-    </div>
+    <img src="Image.jpg" alt="SpellStar app showing a quiz in progress with a custom QWERTY keyboard">
   </div>
 
   <section class="features">
