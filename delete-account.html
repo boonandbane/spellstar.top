@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete Your Account — SpellStar</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --blue: #1a6fd8;
+    --blue-light: #dff1ff;
+    --text: #1a2340;
+    --muted: #5a6a8a;
+    --white: #ffffff;
+    --yellow: #FFD93D;
+    --red: #c0392b;
+    --red-light: #fdf0ef;
+  }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--blue-light);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  header {
+    background: var(--blue);
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+  }
+
+  .star-icon {
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .app-name {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--white);
+  }
+
+  .content {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+  }
+
+  .content h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--blue);
+    margin-bottom: 0.4rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border: 1.5px solid rgba(26,111,216,0.08);
+    box-shadow: 0 2px 10px rgba(26,111,216,0.06);
+  }
+
+  .card.warning {
+    background: var(--red-light);
+    border-color: rgba(192,57,43,0.2);
+  }
+
+  .card h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--blue);
+    margin-bottom: 0.75rem;
+  }
+
+  .card.warning h2 { color: var(--red); }
+
+  .card p {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 0.6rem;
+  }
+
+  .card p:last-child { margin-bottom: 0; }
+
+  .card ul {
+    padding-left: 1.2rem;
+    margin: 0.4rem 0 0.6rem;
+  }
+
+  .card ul li {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 0.3rem;
+  }
+
+  .steps {
+    counter-reset: step;
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+  }
+
+  .steps li {
+    counter-increment: step;
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .steps li::before {
+    content: counter(step);
+    background: var(--blue);
+    color: white;
+    font-weight: 700;
+    font-size: 0.75rem;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .email-btn {
+    display: inline-block;
+    background: var(--blue);
+    color: var(--white);
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 1rem;
+    box-shadow: 0 4px 16px rgba(26,111,216,0.3);
+  }
+
+  .email-btn:hover { background: #1458ad; }
+
+  a { color: var(--blue); }
+
+  footer {
+    background: var(--blue);
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 1.25rem;
+    font-size: 0.85rem;
+  }
+
+  footer a {
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="logo-link" href="/index.html">
+    <div class="star-icon">
+      <svg width="20" height="20" viewBox="0 0 30 30" fill="none"><path d="M15 3l2.8 8.6H26l-7.1 5.2 2.7 8.6L15 20.2l-6.6 5.2 2.7-8.6L4 11.6h8.2L15 3z" fill="#FFD93D"/></svg>
+    </div>
+    <span class="app-name">SpellStar</span>
+  </a>
+</header>
+
+<div class="content">
+  <h1>Delete Your Account</h1>
+  <p class="subtitle">You can request deletion of your SpellStar account and all associated data at any time. Please read the information below before submitting your request.</p>
+
+  <div class="card warning">
+    <h2>⚠️ What gets deleted</h2>
+    <p>Deleting your account will permanently remove the following data from our servers:</p>
+    <ul>
+      <li>Your email address</li>
+      <li>Your user ID</li>
+      <li>Your premium status and purchase history</li>
+    </ul>
+    <p>This action cannot be undone. If you have an active subscription, please cancel it through Google Play before requesting deletion.</p>
+  </div>
+
+  <div class="card">
+    <h2>💾 Data stored on your device</h2>
+    <p>Spelling lists and practice history are stored locally on your device and are not affected by account deletion. To remove this data, uninstall the SpellStar app from your device.</p>
+  </div>
+
+  <div class="card">
+    <h2>📬 How to request deletion</h2>
+    <p>Send us an email from the address associated with your SpellStar account with the subject line "Account Deletion Request". We will delete your account data within 30 days.</p>
+    <ol class="steps">
+      <li>Tap the button below to open your email app</li>
+      <li>Send the email from the Google account you used to sign in to SpellStar</li>
+      <li>We will confirm deletion within 30 days</li>
+    </ol>
+    <a class="email-btn" href="mailto:spellstarapp@gmail.com?subject=Account Deletion Request&body=Please delete my SpellStar account and all associated data.">
+      📧 Request Account Deletion
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>❓ Questions?</h2>
+    <p>If you have any questions about account deletion or data handling, contact us at <a href="mailto:spellstarapp@gmail.com">spellstarapp@gmail.com</a>.</p>
+  </div>
+</div>
+
+<footer>
+  <a href="/index.html">SpellStar Home</a> &nbsp;·&nbsp;
+  <a href="/privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+  <a href="mailto:spellstarapp@gmail.com">Contact</a>
+  <div style="margin-top: 0.5rem;">&copy; <span id="yr"></span> SpellStar. All rights reserved.</div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
